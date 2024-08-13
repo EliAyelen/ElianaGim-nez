@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Delicias de la casa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto Delicias de la casa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicios</a></li>
+                <li><a href="menu.html">Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <fieldset>
+                    <legend>Preferencia de contacto:</legend>
+                    <label><input type="radio" name="contact_method" value="email">Correo electrónico</label>
+                    <label><input type="radio" name="contact-method" value="phone">Teléfono</label>
+                    <label><input type="radio" name="contact_method" value="in_person">En persona</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Intereses:</legend>
+                    <label><input type="checkbox" name="interests" value="coffee">Café</label>
+                    <label><input type="checkbox" name="interests" balue="pastries">Pastelería</label>
+                    <label><input type="checkbox" name="interests" value="events">Eventos</label>
+                </fieldset>
+
+                <label for="preferred_time">Horario preferido para contacto:</label>
+                <datalist id="preferred_time">
+                    <option value="Mañana">
+                    <option value="Tarde">
+                    <option value="Noche">
+                </datalist>
+                <input list="preferred_time" name="preferred_time" id="preferred_time_input">
+
+                <label for="message">Mensaje:</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Información de Contacto</h3>
+            <p><strong>Dirección:</strong>Av. de Mayo 825, Ciudad Autonoma de Buenos Aires</p>
+            <p><strong>Teléfono:</strong>(123) 456 - 7890</p>
+            <p><strong>Horario de Apertura:</strong></p>
+            <ul>
+                <li>Lunes a Viernes: 8:00 - 18:00</li>
+                <li>Sábados: 9:00 - 15:00</li>
+                <li>Domingos: Cerrado</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Síguenos en Redes Sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/grancafetortoni/?locale=es_LA">Facebook</a></li>
+                <li><a href="https://www.instagram.com/grancafetortoni/">Instagram</a></li>
+                <li><a href="https://x.com/grancafetortoni?lang=es">Twitter</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Eliana Giménez</p>
+    </footer>
+</body>
+</html>
